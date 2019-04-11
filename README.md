@@ -28,4 +28,5 @@ The image can either run apt-mirror immediatly and stopping after one run or as 
 `docker run --rm -v /path/to/local/mirror.list:/mirror.list -v /path/to/local/apt-mirror-storage:/var/spool/apt-mirror  5nafu:apt-mirror`
 
 ### Run daily at 3am
+
 `docker run --rm -v /path/to/local/mirror.list:/mirror.list -v /path/to/local/apt-mirror-storage:/var/spool/apt-mirror -e RUNAT="3:00" 5nafu:apt-mirror`
